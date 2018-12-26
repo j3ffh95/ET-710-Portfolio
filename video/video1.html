@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+p {
+    text-indent: 30pt;
+  }
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: -80px;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(168,19,62,0.5);
+    color: #EDBB00;
+    width: 100%;
+    padding: 20px;
+}
+
+.indented {
+  padding-left: 50pt;
+  padding-right: 50pt;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #004D98;
+    color: #EDBB00;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #DB0030;
+    color: black;
+}
+
+</style>
+</head>
+<body>
+
+<video autoplay loop muted id="myVideo">
+  <source src="videoRoni_Trim.mp4 " type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>Ronaldinho: A player that made me love Futbol.</h1>
+  <p class="indented">There may never have been a player who made the game as enjoyable as Ronaldinho, in part because he played and it was a game. <q>I love the ball</q>, he said. One coach, he recalled, told him to change, insisting that he would never make it as a footballer, but he was wrong. It was because he played, because he enjoyed it, that he succeeded: the grin on his face was not just there after he won the league, the Champions League, the World Cup and the Ballon d&#39;Or, it was there while he won them. It became contagious. <q>He changed our history,</q> Barcelona midfielder Xavi Hernandez said.</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>

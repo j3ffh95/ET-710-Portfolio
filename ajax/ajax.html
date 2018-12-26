@@ -1,0 +1,81 @@
+<html>
+<head>
+  <style>
+    body {
+      background-image: url('img/bg1.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      font-size: 1.2rem;
+    }
+
+    .container {
+      margin: 0 auto;
+      padding: 0;
+      text-align: center;
+    }
+
+    .container .title {
+      text-align: center;
+      font-size: 2rem;
+      color: darkblue;
+    }
+    
+    .form {
+      margin: 0 auto;
+      width: 50%; 
+      border: none;
+    }
+
+
+  </style>
+<script>
+function showPlayer(str) {
+  if (str=="") {
+    document.getElementById("txtHint").innerHTML="";
+    return;
+  }
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("txtHint").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","getcd.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+</head>
+<body>
+<div class="container">
+  <div class="title">
+    <h1>Soccer Players</h1>
+  </div>
+  <fieldset class="form">
+    <legend>Information</legend>
+    <form>
+    Select a Player:
+    <select name="players" onchange="showPlayer(this.value)">
+    <option value="">Choose a Player:</option>
+    <option value="Lionel Messi">Lionel Messi</option>
+    <option value="Cristiano Ronaldo">Cristiano Ronaldo</option>
+    <option value="Neymar Jr">Neymar Jr</option>
+    <option value="Luis Suarez">Luis Suarez</option>
+    <option value="Sergio Aguero">Sergio Aguero</option>
+    </select>
+    </form>
+  </fieldset>
+
+  <div id="txtHint">
+    <b>Player info will be listed here...</b>
+  </div>
+</div>
+
+</body>
+</html>

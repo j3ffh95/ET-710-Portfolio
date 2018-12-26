@@ -1,0 +1,42 @@
+<CATALOG> 
+<CD>
+<Nickname>La Pulga</Nickname>
+<FullName>Lionel Messi</FullName>
+<Country>Argentina</Country>
+<Birth>24 June 1987 (age 31)</Birth>
+<Club>Barcelona FC</Club>
+<Position>Forward</Position>
+</CD>
+<CD>
+<Nickname>CR7</Nickname>
+<FullName>Cristiano Ronaldo</FullName>
+<Country>Portugal</Country>
+<Birth>5 February 1985 (age 33)</Birth>
+<Club>Juventus FC</Club>
+<Position>Forward</Position>
+</CD>
+<CD>
+<Nickname>Juninho</Nickname>
+<FullName>Neymar Jr</FullName>
+<Country>Brazil</Country>
+<Birth>5 February 1992 (age 26)</Birth>
+<Club>PSG</Club>
+<Position>Forward</Position>
+</CD>
+<CD>
+<Nickname>El Pistolero</Nickname>
+<FullName>Luis Suarez</FullName>
+<Country>Uruguay</Country>
+<Birth>24 January</Birth>
+<Club>Barcelona FC</Club>
+<Position>Striker</Position>
+</CD>
+<CD>
+<Nickname>El Kun</Nickname>
+<FullName>Sergio Aguero</FullName>
+<Country>Argentina</Country>
+<Birth>2 June 1988 (age 30)</Birth>
+<Club>Manchester City FC</Club>
+<Position>Striker</Position>
+</CD>
+</CATALOG>

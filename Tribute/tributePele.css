@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+header {
+  margin-top: 80px;
+}
+/* NAV STYLE BEGINS*/
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+/* NAV STYLE ENDS */
+.essay {
+  margin: auto 20%;
+
+}
+.logo, .logo:hover {
+  width: auto;
+  height: auto;
+  margin: -20px;
+  border: none;
+  background-color: #fff;
+}

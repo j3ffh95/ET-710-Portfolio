@@ -1,0 +1,214 @@
+
+<!-- Jefferson Huisa
+ET 710
+2/27/18
+Homework Assignment 2
+CunyWebWorkshops -->
+
+<html>
+	<head>
+		<title>Lists, Tables and Forms</title>
+		<link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<style type="text/css">
+			body {
+				text-align: center;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 1.5em;
+				color: #6CABDD;
+				background-color: #f8f8f8;
+				}
+			ul {
+        text-align: left;
+        display:inline-block;
+				}
+			table {
+			 	border-spacing: 0px;
+			 	margin: 10px auto 10px auto;
+				}
+			h1 {
+				text-decoration: underline;
+				font-family: 'Open Sans', sans-serif;
+				color: #FFC659;}
+			p,ul {
+				font-family: 'Open Sans', sans-serif;
+			}
+			li {
+				list-style-image: url("images/icon-plus.png");
+				line-height: 1.6em;}
+			th, td {
+				padding: 5px 30px 5px 10px;
+				border-spacing: 0px;
+				font-size: 90%;
+				margin: 0px;}
+			th, td {
+				font-family: 'Open Sans', sans-serif;
+				text-align: left;
+				background-color: #e1efec;
+				border-top: 1px solid #f1f8fe;
+				border-bottom: 1px solid #cbd2d8;
+				border-right: 1px solid #cbd2d8;}
+			tr.head th {
+				color: #fff;
+				background-color: #54a992;
+				border-bottom: 2px solid #547ca0;
+				border-right: 1px solid #749abe;
+				border-top: 1px solid #90b4d6;
+				text-align: center;
+				text-shadow: -1px -1px 1px #666666;
+				letter-spacing: 0.15em;}
+			td {
+				text-shadow: 1px 1px 1px #ffffff;}
+			tr.even td, tr.even th {
+				background-color: #e5f9f3;}
+			tr.head th:first-child {
+				-webkit-border-top-left-radius: 5px;
+				-moz-border-radius-topleft: 5px;
+				border-top-left-radius: 5px;}
+			tr.head th:last-child {
+				-webkit-border-top-right-radius: 5px;
+				-moz-border-radius-topright: 5px;
+				border-top-right-radius: 5px;}
+			fieldset {
+				padding: 10px;
+				width: 400px;
+				margin: 10px auto;
+				border: 1px solid #d6d6d6;
+				background-color: #ffffff;
+				line-height: 1.6em;}
+			legend {
+				font-style: italic;
+				color: #D4A12A;}
+			input[type="text"] {
+				width: 120px;
+				border: 1px solid #d6d6d6;
+				padding: 2px;
+				outline: none;}
+			input[type="text"]:focus,
+			input[type="text"]:hover {
+				background-color: #d0e2f0;
+				border: 1px solid #999999;}
+			input[type="submit"] {
+				border: 1px solid #FFC659;
+				background-color: #FFC659;
+				color: #ffffff;
+				border-radius: 5px;
+				padding: 5px;
+				margin-top: 10px;}
+			input[type="submit"]:hover {
+				border: 1px solid #6CABDD;
+				background-color: #6CABDD;
+				color: #ffffff;
+				cursor: pointer;}
+			input[type="submit"]{
+				font-family: 'Open Sans', sans-serif;
+			}
+			.title {
+				float: left;
+				width: 160px;
+				clear: left;
+				font-family: 'Open Sans', sans-serif;
+			}
+			.submit {
+				width: 310px;
+				text-align: right;}
+
+			label	{
+				font-family: 'Open Sans', sans-serif;}
+
+			tr:hover td, tr:hover th{
+				background-color: #f6e8c3;
+					}
+		</style>
+</head>
+<body>
+<h1>CUNY Web Workshops</h1>
+
+
+<p> We will be conducting a number of web workshops to alerts the college community. </br></br> Please note that the following events are free to members:</p>
+<div class="container">
+	<ul id="workshops">
+	<li>HTML 5 Seminar</li>
+	<li>CSS Seminar</li>
+	<li>Bootstrap Seminar</li>
+	<li>Photoshop Seminar</li>
+	</ul>
+</div>
+
+<table>
+			<tr>
+				<th>Seminars</th>
+				<th>LaGuardia</th>
+				<th class="QCC">QCC</th>
+				<th class="CCNY">CCNY</th>
+			</tr>
+			<tr>
+				<td>HTML5</td>
+				<td class="datetime">Web,5 Dec</br>Noon till 3PM</td>
+				<td class="datetime">Tues, 11 Dec </br>1PM - 4PM</td>
+				<td class="datetime">Mon, 10 Dec </br>1PM - 4PM</td>
+			</tr>
+			<tr class="even">
+				<td>CSS</td>
+				<td class="datetime">Sat, 8 Dec </br>12 - 3PM</td>
+				<td class="datetime">Thurs, 6 Dec </br>11AM - 2PM</td>
+				<td>N/A</td>
+			</tr>
+			<tr>
+			 <td>Photoshop</td>
+			 <td>N/A</td>
+			 <td>N/A</td>
+			 <td class="datetime">Fri, 7 Dec</br>2PM - 5PM</td>
+			</tr>
+			<tr class="even">
+				<td>Bootstrap</td>
+				 <td class="datetime">Sat, 8 Dec</br>12 - 3PM</td>
+				  <td class="datetime">Mon, 10 Dec</br>11AM - 2PM</td>
+				   <td class="datetime">Wed, 5 Dec</br>1PM - 4PM</td>
+			</tr>
+		</table>
+
+</div>
+
+		<form action="http://www.example.com/review.php" method="get">
+			<fieldset>
+				<legend>Register For Web Workshop</legend>
+				<p>Your Name: <input type="text" name="name" size="30" maxlength="100"></p>
+				<p>Your Email: <input type="text" name="email" size="30" maxlength="100"></p>
+				<p>Your College:
+					<select name="colleges">
+						<option value="qcc">Queensborough Community College</option>
+						<option value="hunter">Hunter College</option>
+						<option value="laguardia">Laguardia Community College</option>
+						<option value="baruch">Baruch College</option>
+					</select>
+				</p>
+				<p>Are you a member?
+				<input type="radio" name="member" value="yes" /> Yes
+				<input type="radio" name="member" value="no" /> No
+				</p> <br />
+				<input type="submit" value="Register"/>
+				<!-- <legend>Register your Web Workshop</legend>
+				<label>Name: <input type="text" name="name" size="30" maxlength="100"></label><br />
+				<label>Email: <input type="email" name="email" size="30" maxlength="100"></label><br />
+				<label for="hear-about">Your College?</label>
+				<select name="referrer" id="hear-about">
+				<option value="LaGuardia">LaGuardia</option>
+				<option value="QCC">QCC</option>
+				<option value="CCNY">CCNY</option>
+				</select>
+				</br>Are you a member?
+					<label><input type="radio" name="rating" value="yes" /> Yes</label>
+					<label><input type="radio" name="rating" value="no" /> No</label>
+				<br/>
+				<div>
+				<center>
+				<input type="submit" value="Register" />
+				</div> -->
+				</fieldset>
+		</form>
+		</body>
+</html>
